@@ -4,6 +4,12 @@
 
 .left-side {
     background: red;
+    width: 20%;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
 }
 
 .right-side {
