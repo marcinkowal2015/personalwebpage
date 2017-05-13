@@ -1,0 +1,12 @@
+.app {
+    display: flex;
+}
+
+.left-side {
+    background: red;
+}
+
+.right-side {
+    background: gold;
+    flex: 1;
+}

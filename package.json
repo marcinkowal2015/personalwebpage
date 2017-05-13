@@ -1,0 +1,14 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "This is personal website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node Frontend/server.js"
+  },
+  "author": "Marcin Kowal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
