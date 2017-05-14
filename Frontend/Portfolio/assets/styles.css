@@ -11,6 +11,7 @@ body {
 
 .left-side {
     width: 20%;
+    min-width: 500px;
 }
 
 .avatar-photo {
@@ -53,6 +54,11 @@ body {
 .avatar-icons {
     margin-top: 8px;
     margin-bottom: 8px;
+}
+
+.details-card {
+    border-top: limegreen 4px solid;
+    margin: 20px;
 }
 
 .right-side {
