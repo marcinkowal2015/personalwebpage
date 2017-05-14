@@ -1,18 +1,60 @@
+body {
+    margin: 0;
+}
+
 .app {
     display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
 }
 
 .left-side {
-    background: red;
     width: 20%;
 }
 
-.avatar {
-    width: 100%;
-    height: 100%;
+.avatar-photo {
+    align-self: center;
+    width: 90%;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.avatar-card {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #eaecef;
+    border-top: limegreen 4px solid;
+}
+
+.avatar-data {
+    width: 90%;
+    align-self: center;
+    margin-top: 10px;
+    font-family: 'Roboto';
+}
+
+.avatar-name {
+    font-size: 26px;
+}
+
+.avatar-title {
+    color: #575859;
+}
+
+.avatar-about {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.avatar-icons {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .right-side {
-    background: gold;
     flex: 1;
 }
