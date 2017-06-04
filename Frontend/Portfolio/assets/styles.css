@@ -1,66 +1,71 @@
 body {
-    margin: 0;
+    background: lightgray;
+    margin: 20px 300px 0 300px;
 }
 
-.app {
+.header-container {
+    position: relative;
+    height: 300px;
+    background: #09a573;
+    margin: 20px 50px 0 50px;
     display: flex;
-    height: 100vh;
-    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image {
+    height: 80%;
+    border-radius: 50%;
+}
+
+.main-container {
     background: #fff;
-}
-
-.left-side {
-    width: 20%;
-    min-width: 500px;
-}
-
-.avatar-photo {
-    align-self: center;
-    width: 90%;
+    margin: -20px;
     padding-top: 20px;
-    box-sizing: border-box;
+    padding-bottom: 20px;
 }
 
-.avatar-card {
+.main-title {
+    font-family: Roboto;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: #eaecef;
-    border-top: limegreen 4px solid;
+    align-items: center;
 }
 
-.avatar-data {
-    width: 90%;
-    align-self: center;
+.main-title-name {
+    font-size: 30px;
+}
+
+.main-title-title {
+    font-size: 24px;
     margin-top: 10px;
-    font-family: 'Roboto';
+    color: #808080;
+    font-style: italic;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #808080;
+    width: 300px;
+    text-align: center;
 }
 
-.avatar-name {
-    font-size: 26px;
+.main-about {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
 }
 
-.avatar-title {
-    color: #575859;
+.main-about-title {
+    font-size: 30px;
 }
 
-.avatar-about {
-    margin-top: 5px;
-    font-size: 14px;
+.main-about-description {
+    width: 60%;
+    margin-top: 10px;
 }
 
-.avatar-icons {
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.details-card {
-    border-top: limegreen 4px solid;
-    margin: 20px;
-}
-
-.right-side {
-    flex: 1;
+.main-about-icons {
+    margin-top: 15px;
 }
