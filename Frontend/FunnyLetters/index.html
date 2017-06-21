@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HuE hUe HuE HUE</title>
+    <link rel="stylesheet" href="FunnyLetters/assets/styles.css">
+</head>
+<body>
+<section id="letter-itself" class="letter-itself">ż</section>
+<section class="hue-button-holder">
+    <button id="hue-button" class="hue-button">
+        <div class="hue-button-text">HUE</div>
+    </button>
+</section>
+</body>
+
+<script>
+    const letters = ["a", "ą","b", "c", "ć", "d", "e", "ę", "f", "g", "h",
+        "i", "j", "k", "l", "ł", "m", "n", "ń", "o", "ó", "p", "q",
+        "r", "s", "ś", "t", "u", "v", "w", "x", "y", "z", "ź", "ż"];
+
+    document.getElementById("hue-button").addEventListener("click", () => {
+        const randomNumber = Math.floor(Math.random() * 35);
+        console.log(randomNumber);
+        document.getElementById("letter-itself").innerHTML = letters[randomNumber];
+    });
+    console.log(letters.length);
+</script>
+</html>

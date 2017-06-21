@@ -1,0 +1,30 @@
+body {
+    background: hotpink;
+}
+
+.letter-itself {
+    text-align: center;
+    font-size: 400px;
+    font-family: "Comic Sans MS";
+}
+
+.hue-button-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.hue-button {
+    font-family: "Comic Sans MS";
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    background: greenyellow;
+}
+
+.hue-button:focus {
+    outline: none;
+}
+
+.hue-button-text {
+    font-size: 30px;
+}
