@@ -4,6 +4,10 @@ const path = require("path");
 const app = express();
 
 app.get('/',(req, res) => {
+    res.sendFile(path.join(__dirname + '/Portfolio-old/index.html'));
+});
+
+app.get('/new',(req, res) => {
     res.sendFile(path.join(__dirname + '/Portfolio/index.html'));
 });
 
@@ -16,6 +20,8 @@ app.get('/rz', (req, res) => {
 });
 
 app.use('/Portfolio/assets', express.static(path.join(__dirname + '/Portfolio/assets')));
+
+app.use('/Portfolio-old/assets', express.static(path.join(__dirname + '/Portfolio-old/assets')));
 
 app.use('/ES6Playground/assets', express.static(path.join(__dirname + '/ES6Playground/assets')));
 
