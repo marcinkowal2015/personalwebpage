@@ -1,71 +1,88 @@
-.body-background {
-    background: #c9c9c9;
+body {
+    background: lightgray;
+    margin: 20px 10% 0 10%;
+}
+
+.header-container {
+    position: relative;
+    height: 300px;
+    background: #09a573;
+    margin: 20px 50px 0 50px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: 0;
 }
 
-.main {
-    background: #333333;
-    max-width: 1000px;
-    display: flex;
-    min-height: 100vh;
+.header-image {
+    height: 80%;
+    border-radius: 50%;
 }
 
-.main-right {
-    background: #494949;
-    padding-top: 30px;
-    padding-left: 5px;
-    flex-shrink: 2;
-}
-
-.main-left {
-    margin: 20px 5px 5px 15px;
-    flex-basis: 400px;
+.main-container {
+    background: #fff;
+    margin: -20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .main-title {
-    color: #6e690d;
-    font-size: 50px;
-    text-transform: uppercase;
-    font-family: 'Kanit', sans-serif;
-    line-height: 30px;
-}
-
-.main-subtitle {
-    color: white;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-family: 'Kanit', sans-serif;
-}
-
-.main-info {
-    padding-top: 30px;
+    font-family: Roboto;
+    margin-top: 30px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.main-avatar {
-    height: 250px;
-    width: 200px;
+.main-title-name {
+    font-size: 30px;
 }
 
-.main-text {
-    color: white;
-    padding: 0 20px 0 20px;
-    font-family: 'Kanit', sans-serif;
+.main-title-title {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #808080;
+    font-style: italic;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #808080;
+    width: 300px;
+    text-align: center;
 }
 
-.nav-title {
-    color: #6e690d;
-    font-size: 35px;
-    text-transform: uppercase;
-    font-family: 'Kanit', sans-serif;
+.main-about {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
 }
 
-.nav-subtitle {
-    color: white;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-family: 'Kanit', sans-serif;
+.main-about-title {
+    font-size: 30px;
+}
+
+.main-about-description {
+    width: 60%;
+    margin-top: 10px;
+}
+
+.main-about-icons {
+    margin-top: 15px;
+}
+
+.main-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    font-family: Roboto;
+}
+
+.main-contact-title {
+    font-size: 30px;
+}
+
+.main-contact-details {
+    margin-top: 10px;
+    color: #808080;
 }
