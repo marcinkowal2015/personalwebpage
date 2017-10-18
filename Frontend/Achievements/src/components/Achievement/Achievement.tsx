@@ -24,7 +24,7 @@ export default class Achievement extends React.Component<IAchievement, IAchievem
     }
 
     render() {
-        return <div>
+        return <div className={styles.card}>
             <div className={styles.foo}>{this.state.name}</div>
             <div>{this.state.description}</div>
             {this.completedBadge()}

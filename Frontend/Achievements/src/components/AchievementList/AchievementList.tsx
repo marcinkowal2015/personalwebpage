@@ -1,8 +1,8 @@
 import * as React from "react";
-import Achievement from "./Achievement/Achievement";
+import Achievement from "../Achievement/Achievement";
+import * as styles from "./achievementList.css";
 
 interface AchievementListState {
-    title: string,
     achievements: JSX.Element[],
     name: string,
     description: string
@@ -13,8 +13,7 @@ export default class AchievementList extends React.Component<undefined, Achievem
     constructor(props: undefined) {
         super(props);
         this.state = {
-            achievements: [],
-            title: "List of current achievements",
+            achievements: [<Achievement name={"Testing"} description={"Testing desc"} isCompleted={false} key='unique1'/>],
             name: "",
             description: ""
         };
@@ -33,7 +32,7 @@ export default class AchievementList extends React.Component<undefined, Achievem
     }
     render() {
         return<div>
-            <h1 className={"title"}>{this.state.title}</h1>
+            <div className={styles.title}>List of achievements</div>
             {this.state.achievements}
             <div>New achievement</div>
             <div>Name {this.state.name}</div>

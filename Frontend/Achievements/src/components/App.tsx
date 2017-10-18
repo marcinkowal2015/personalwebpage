@@ -1,9 +1,8 @@
 import * as React from "react";
-import AchievementList from "./AchievementList";
+import * as styles from "./app.css";
 
-export interface AppProps { message: string }
+import AchievementList from "./AchievementList/AchievementList";
 
-export const App = (props: AppProps) => <div>
-    <h1>{props.message}</h1>
+export const App = (props: {}) => <div className={styles.app}>
     <AchievementList/>
 </div>;
