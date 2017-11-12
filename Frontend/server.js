@@ -19,6 +19,10 @@ app.get('/achievements', (req, res) => {
     res.sendFile(path.join(__dirname + '/Achievements/index.html'));
 });
 
+app.get('/home', (req, res) => {
+    res.sendFile(path.join(`${__dirname}/Login/index.html`));
+});
+
 app.use('/Portfolio/assets', express.static(path.join(__dirname + '/Portfolio/assets')));
 
 app.use('/ES6Playground/assets', express.static(path.join(__dirname + '/ES6Playground/assets')));
